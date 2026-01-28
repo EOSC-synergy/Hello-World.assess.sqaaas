@@ -1,0 +1,42 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/octocat/Hello-World:
+      branch: master
+      repo: https://github.com/octocat/Hello-World
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/octocat/Hello-World git:
+        commands:
+        - /usr/bin/env sh .sqa/script.snoopy-gamboge-gibbon.sh
+        container: qc.acc_nerdy-green-chicken
+  QC.Doc:
+    repos:
+      github.com/octocat/Hello-World find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-tangerine-corgi.sh
+        container: qc.doc_lovely-xanthic-boar
+      github.com/octocat/Hello-World git:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-silver-monster.sh
+        container: qc.doc_wimpy-tan-spitz
+  QC.Lic:
+    repos:
+      github.com/octocat/Hello-World licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-russet-fish.sh
+        container: qc.lic_breezy-olive-sheep
+  QC.Ver:
+    repos:
+      github.com/octocat/Hello-World get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.queasy-harlequin-dalmatian.sh
+        container: qc.ver_cloudy-lemon-snake
+timeout: 5400
