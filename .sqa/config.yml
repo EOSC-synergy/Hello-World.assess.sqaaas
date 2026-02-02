@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/octocat/Hello-World git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-ultramarine-horse.sh
-        container: qc.acc_whiny-celadon-wasp
+        - /usr/bin/env sh .sqa/script.cloudy-jade-woodlouse.sh
+        container: qc.acc_fuzzy-green-olm
   QC.Doc:
     repos:
       github.com/octocat/Hello-World find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-orchid-sparrow.sh
-        container: qc.doc_bluesy-heliotrope-chinchilla
+        - /usr/bin/env sh .sqa/script.shabby-carmine-zorse.sh
+        container: qc.doc_chummy-grey-fish
       github.com/octocat/Hello-World git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-peach-caiman.sh
-        container: qc.doc_sickly-seashell-giraffe
+        - /usr/bin/env sh .sqa/script.craggy-blue-foxhound.sh
+        container: qc.doc_bumpy-pumpkin-zebra
   QC.Lic:
     repos:
       github.com/octocat/Hello-World licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-teal-kangaroo.sh
-        container: qc.lic_pasty-cerise-jackal
+        - /usr/bin/env sh .sqa/script.messy-denim-wildebeest.sh
+        container: qc.lic_lovely-azure-dachsbracke
   QC.Ver:
     repos:
       github.com/octocat/Hello-World get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-grey-swan.sh
-        container: qc.ver_nippy-beige-coral
+        - /usr/bin/env sh .sqa/script.squirrely-coral-squid.sh
+        container: qc.ver_homely-sangria-butterfly
 timeout: 5400
