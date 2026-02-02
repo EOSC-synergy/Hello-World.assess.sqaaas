@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/octocat/Hello-World:
       branch: master
@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/octocat/Hello-World git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-gamboge-gibbon.sh
-        container: qc.acc_nerdy-green-chicken
+        - /usr/bin/env sh .sqa/script.frumpy-ultramarine-horse.sh
+        container: qc.acc_whiny-celadon-wasp
   QC.Doc:
     repos:
       github.com/octocat/Hello-World find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-tangerine-corgi.sh
-        container: qc.doc_lovely-xanthic-boar
+        - /usr/bin/env sh .sqa/script.stuffy-orchid-sparrow.sh
+        container: qc.doc_bluesy-heliotrope-chinchilla
       github.com/octocat/Hello-World git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-silver-monster.sh
-        container: qc.doc_wimpy-tan-spitz
+        - /usr/bin/env sh .sqa/script.cloudy-peach-caiman.sh
+        container: qc.doc_sickly-seashell-giraffe
   QC.Lic:
     repos:
       github.com/octocat/Hello-World licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-russet-fish.sh
-        container: qc.lic_breezy-olive-sheep
+        - /usr/bin/env sh .sqa/script.flabby-teal-kangaroo.sh
+        container: qc.lic_pasty-cerise-jackal
   QC.Ver:
     repos:
       github.com/octocat/Hello-World get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-harlequin-dalmatian.sh
-        container: qc.ver_cloudy-lemon-snake
+        - /usr/bin/env sh .sqa/script.frumpy-grey-swan.sh
+        container: qc.ver_nippy-beige-coral
 timeout: 5400
